@@ -28,13 +28,13 @@ function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) 
     console.log(randomNumber)
 
-    if(randomNumber === 1) {
+    if(randomNumber === 0) {
         computerChoice = 'rock'
     }
-    if(randomNumber === 2) {
+    if(randomNumber === 1) {
         computerChoice = 'scissors'
     }
-    if(randomNumber === 3) {
+    if(randomNumber === 2) {
         computerChoice = 'paper'
     }
 
@@ -42,7 +42,7 @@ function generateComputerChoice() {
 }
 
 function getResult() {
-    if(computerChoice === userChoice){
+    if(computerChoice == userChoice){
         result = "it's a draw"
     }
     if(computerChoice === 'rock' && userChoice == 'scissors'){

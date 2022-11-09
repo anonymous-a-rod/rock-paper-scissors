@@ -60,6 +60,7 @@ div.count {
     justify-content: space-around;
     align-items: center;
     height: 120px;
+    
 
 }
 
@@ -69,6 +70,7 @@ div.count {
     justify-content: space-around;
     width: 100%;
     height: 200px;
+    max-width: 1000px;
 }
 
 .result {

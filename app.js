@@ -37,7 +37,6 @@ function generateComputerChoice() {
     if(randomNumber === 2) {
         computerChoice = 'paper'
     }
-
     computerChoiceDisplay.innerHTML = `<img src="${computerChoice}.svg">` 
 }
 
@@ -71,10 +70,6 @@ function getResult() {
         result = "you win"
         userCount++;
     }
-
-
-
-
 
     resultDisplay.innerHTML = result
     userCountDisplay.innerHTML = userCount

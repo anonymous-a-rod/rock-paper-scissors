@@ -1,0 +1,181 @@
+*, *::after, *::before {
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Permanent marker';
+    font-size: 1.5em;
+}
+
+.background {
+    position: absolute;
+    background-image: url("background.jpg");
+    opacity: 0.5;
+    z-index: -10;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;  
+    background-position: center center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+div.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    height: 260px;
+    flex-wrap: wrap;
+}
+
+.score-label {
+    width: 100%;
+    font-size: 3em;
+    justify-items: flex-start;
+    color: red;
+}
+
+div.count {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 33%;
+    width: 100%;
+    height: 200px;
+}
+
+.btn {
+    background: #7C7C7C;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.2rem;
+    margin: 1rem;
+    min-width: 200px;
+    padding: .5rem;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.btn:focus,
+.btn:hover {
+        background-color: #BCBCBC;
+}
+
+
+.btn.primary {
+    background: #881400;
+}
+
+.btn.primary:focus,
+.btn.primary:hover {
+        background: #A81000;
+}
+
+.btn.secondary {
+    background: #005800;
+}
+
+.btn.secondary:focus,
+.btn.secondary:hover {
+        background: #006800;
+}
+
+.btn.tertiary {
+    background: #0000BC;
+}
+
+.btn.tertiary:focus,
+.btn.tertiary:hover {
+        background: #0000FC;
+}
+
+
+
+
+
+@media (max-width: 1060px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .btn {
+        transform: scale(.6);
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    .score-label {
+        font-size: 2em;
+    }
+    div.score {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .btn {
+        transform: scale(.4);
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
+    .score-label {
+        font-size: 2em;
+    }
+}
+
+
+
